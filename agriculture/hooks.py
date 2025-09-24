@@ -69,13 +69,13 @@ required_apps = ["erpnext"]
 # ------------
 
 # before_install = "agriculture.install.before_install"
-after_install = "agriculture.agriculture.setup.setup_agriculture"
+after_install = "agriculture.setup.setup_agriculture"
 
 # Uninstallation
 # ------------
 
 # before_uninstall = "agriculture.uninstall.before_uninstall"
-after_uninstall = "agriculture.agriculture.setup.cleanup_role_and_permissions"
+after_uninstall = "agriculture.setup.cleanup_role_and_permissions"
 
 # Desk Notifications
 # ------------------
@@ -206,7 +206,7 @@ global_search_doctypes = {
 	]
 }
 
-domains = {
-	'Agriculture': 'agriculture.agriculture.agriculture',
-}
+# domains = {
+# 	'Agriculture': 'agriculture.agriculture.agriculture',
+# }
 
